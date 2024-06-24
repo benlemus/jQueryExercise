@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Critic</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="titleContainer">
+      <h1 id="beYourOwnTitle">Be Your Own Critic!</h1>
+      <p>Submit a movie title and rating(0-10) below!</p>
+
+      <form action="">
+        <input
+          type="text"
+          name="title"
+          placeholder="Movie Title"
+          class="movieTitle"
+        />
+        <label for="ratingInput" class="rating">Rating:</label>
+        <input type="range" id="ratingInput" class="rating" min="0" max="10" />
+      </form>
+      <button id="submitBtn">Create Rating</button>
+    </div>
+
+    <div class="newRatingsContainer">
+      <h3>Your Ratings:</h3>
+      <div class="gridContainer">
+        <div class="newTitle">TITLE</div>
+        <div class="newRating">RATING</div>
+      </div>
+    </div>
+
+    <div class="sortContainer">
+      <h4 class="sortTxt">Sort:</h4>
+
+      <p id="alphabeticallyTxt">Alphabetically</p>
+      <ul>
+        <li><a href="" class="a-z">a-z</a></li>
+        <li><a href="" class="z-a">z-a</a></li>
+      </ul>
+      <p id="ratingTxt">Rating</p>
+      <ul>
+        <li><a href="" class="lowest">Lowest</a></li>
+        <li><a href="" class="highest">Highest</a></li>
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
